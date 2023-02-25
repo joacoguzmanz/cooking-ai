@@ -9,7 +9,7 @@ export default function Home() {
         const res = await fetch('/api/generate', {
             method: 'POST',
             headers: {
-                'Content-type': 'application/json',
+                'Content-Type': 'application/json',
             },
             body: JSON.stringify({ input })
         })
