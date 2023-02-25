@@ -1,5 +1,5 @@
 import { Configuration, OpenAIApi } from "openai";
-import { NextApiRequest, NextApiResponse } from "next";
+import type { NextApiRequest, NextApiResponse } from "next";
 
 if (!process.env.OPENAI_API_KEY) {
     throw new Error('Not env for OpenAI')

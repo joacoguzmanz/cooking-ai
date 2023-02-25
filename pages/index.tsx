@@ -43,14 +43,14 @@ export default function Home() {
               <div className='border-2 rounded-lg px-2 py-3'>
                   <>
                       <ul>
-                          {recipe
+                          {recipe ? recipe
                               .substring(recipe.indexOf('1') + 3)
                               .split(/[2-9]+\.\s/)
                               .map((step, index) => {
                                   return (
                                       <li className='mb-5 list-decimal list-inside' key={index}>{step}</li>
                                   )
-                              })}
+                              }) : 'Loading...'}
                       </ul>
                   </>
               </div>
