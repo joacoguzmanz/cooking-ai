@@ -36,11 +36,11 @@ export default function Home() {
           </div>
 
 
-          <div className='border-2 rounded-lg px-2 py-3 font-semibold'>
+          <div className='mb-3 text-lg font-medium'>
               <h2>Your recipe</h2>
           </div>
           {recipe && (
-              <div className='border-2 rounded-lg px-2 py-3'>
+              <div className='border-2 rounded-lg px-3 pt-4'>
                   <>
                       <ul>
                           {recipe ? recipe
