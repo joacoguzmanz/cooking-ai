@@ -29,7 +29,7 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
         
         Person: What can I cook with ${input}?
         Chef: `,
-        max_tokens: 600,
+        max_tokens: 800,
         temperature: 0.65
     })
 
