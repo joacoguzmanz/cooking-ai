@@ -8,7 +8,7 @@ type ChildrenProps = {
 
 export default function Layout({ children }: ChildrenProps) {
   return (
-    <div className='min-h-screen flex flex-col'>
+    <div className='min-h-screen flex flex-col md:max-w-md md:mx-auto'>
         <Head>
             <title>Cooking with AI</title>
             <meta name="AI helps you to cook" content="App that suggest you what to cook" />
