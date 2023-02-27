@@ -31,7 +31,7 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
         Person: What can I cook with ${input}?
         Chef: `,
         max_tokens: 800,
-        temperature: 0.45
+        temperature: 0.65
     })
 
     res.status(200).json({ message: response.data.choices[0].text })
