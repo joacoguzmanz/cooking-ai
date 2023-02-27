@@ -16,7 +16,8 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
 
     const response = await openai.createCompletion({
         model: 'text-curie-001',
-        prompt: `You are a chef that helps people giving clear instructions to cook different meals. 
+        prompt: `You are a chef that helps people giving clear instructions to cook different meals and only 
+        answers about cooking. 
 
         Person: What can I cook with onions, garlic, meat, potatoes?
         Chef: You can make a wonderful dish, following this simple steps: 
@@ -30,7 +31,7 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
         Person: What can I cook with ${input}?
         Chef: `,
         max_tokens: 800,
-        temperature: 0.65
+        temperature: 0.45
     })
 
     res.status(200).json({ message: response.data.choices[0].text })
